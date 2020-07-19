@@ -53,6 +53,7 @@ public class Main {
         } catch (UnknownIngredientException e) {
             System.out.println(e.getMessage());
         }
+        vendingMachine.stop();
     }
 
     private static void sleep() {
