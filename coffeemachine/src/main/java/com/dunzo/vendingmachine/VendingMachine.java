@@ -50,4 +50,8 @@ public class VendingMachine {
     public void refillIngredient(Ingredient ingredient, int quantity) throws UnknownIngredientException {
         ingredientStore.increaseIngredientQuantity(ingredient, quantity);
     }
+
+    public void stop() {
+        outlet.stop();
+    }
 }

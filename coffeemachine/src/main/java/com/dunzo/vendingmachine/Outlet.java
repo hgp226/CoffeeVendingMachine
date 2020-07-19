@@ -22,4 +22,8 @@ public class Outlet {
             System.out.println(String.format("%s is served", beverage.getType()));
         });
     }
+
+    public void stop() {
+        executorService.shutdown();
+    }
 }
